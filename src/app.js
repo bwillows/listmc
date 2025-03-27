@@ -30,6 +30,8 @@ app.get('/index.html', (req, res) => { res.redirect('/'); });
 
 app.use('/styles', express.static('./src/public/styles/'));
 app.use('/scripts', express.static('./src/public/scripts/'));
+app.use('/images', express.static('./src/public/images/'));
+
 
 app.use('/uploads', express.static('./data/uploads/'));
 

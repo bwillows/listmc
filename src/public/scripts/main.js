@@ -11,13 +11,11 @@ fetch("/components/header")
   .then((header) => {
     document.getElementsByTagName("head")[0].innerHTML += header;
   });
-
 fetch("/components/navbar")
   .then((response) => response.text())
   .then((navbar) => {
     document.getElementsByTagName("body")[0].prepend(createElementFromHTML(navbar));
   });
-
 fetch("/components/footer")
   .then((response) => response.text())
   .then((footer) => {

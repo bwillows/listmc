@@ -7,10 +7,21 @@
 
 <body>
 <div class="inner">
-
-  <div id="template">
+  <div id="template" class="hidden">
     <div class="server">
-        server
+        <div class="clearfix">
+            <div class="float-left">
+                <div class="icon-square"></div>
+            </div>
+            <div class="float-left">
+                <a class="server-link">
+                    <div class="banner">
+                    </div>
+                </a>
+            </div>
+            <div class="float-right">10000/10000</div>
+        </div>
+        <div onclick="copy_ip('testip.com', 'test1')" class="post-ip">testip.com</div>
     </div>
 
     <!-- ### -->
@@ -26,17 +37,45 @@
 </div>
 
     <script>
+        function copy_ip(ip, id) {
+            navigator.clipboard.writeText(ip);
+
+            document.getElementById(id).getElementsByClassName("post-ip")[0].innerHTML = "copied!";
+
+            setTimeout(() => {
+                document.getElementById(id).getElementsByClassName("post-ip")[0].innerHTML = ip;
+            }, "1000");
+        }
+
+        let server_template = document.getElementsByClassName("server")[0];
+        let servers_feed = document.getElementById("server-feed");
+
         fetch("/api/servers")
             .then(response => response.json())
             .then(servers_response => {
-                console.log(servers_response);
+                for(let server in servers_response) {
+                    let serv = server_template.cloneNode(true);
+
+                    serv.id = server;
+
+                    serv.getElementsByClassName("post-ip")[0].setAttribute("onclick", "copy_ip('" + servers_response[server].ip + "','" + server + "')");
+                    serv.getElementsByClassName("post-ip")[0].innerHTML = servers_response[server].ip;
+                    serv.getElementsByClassName("server-link")[0].href = "/server/" + server;
+                   
+                    fetch("/ping/" + servers_response[server].ip)
+                        .then(response => response.json())
+                        .then(ping_response => {
+                            // 
+                        });
+        
+
+                    servers_feed.appendChild(serv);
+                }
+
         });
 
-        fetch("/ping/mc.hypixel.net")
-            .then(response => response.json())
-            .then(ping_response => {
-                console.log(ping_response);
-        });
+        
+        
     </script>
 </body>
 </html>

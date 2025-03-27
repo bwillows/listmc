@@ -7,4 +7,7 @@
             <button id="profile"><i class="fa-sharp fa-solid fa-user"></i></button>
         </div>
     </div>
+    <div class="clearfix inner" style="padding-top: 8px;">
+        <div id="primary">Open-source Minecraft server list categorizing servers by version, player count, game mode, and more.</div>
+    </div>
 </div>

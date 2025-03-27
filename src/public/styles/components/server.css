@@ -1,6 +1,33 @@
 .server {
     width: 100%;
     border: 1px solid black;
-    padding: 1px;
-    background-color: red;
+    background-color: white;
+}
+.server .icon-square {
+    aspect-ratio: 1/1;
+    width: 100px;
+    background-color: gray;
+}
+.server-link:hover {
+    cursor: pointer;
+}
+.server .banner {
+    margin-left: 16px;
+    aspect-ratio: 3/1;
+    height: 100px;
+    background-color: gray;
+    background-image: url('/images/banner.png');
+    background-size: contain;
+}
+.server .post-ip {
+    width: 100%;
+    margin-top: 8px;
+    padding: 2px;
+    box-sizing: border-box;
+    background-color: gray;
+    text-align: center;
+}
+
+.server .post-ip:hover {
+    cursor: pointer;
 }
