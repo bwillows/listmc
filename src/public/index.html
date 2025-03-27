@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/5a954d6d48.js" crossorigin="anonymous"></script>
+    <script src="/scripts/main.js"></script>
+</head>
+
+<body>
+<div class="inner">
+
+  <div id="template">
+    <div class="server">
+        server
+    </div>
+
+    <!-- ### -->
+
+  </div>
+
+  <div id="server-feed">
+
+  </div>
+  
+  
+	
+</div>
+
+    <script>
+        fetch("/api/servers")
+            .then(response => response.json())
+            .then(servers_response => {
+                console.log(servers_response);
+        });
+
+        fetch("/ping/mc.hypixel.net")
+            .then(response => response.json())
+            .then(ping_response => {
+                console.log(ping_response);
+        });
+    </script>
+</body>
+</html>

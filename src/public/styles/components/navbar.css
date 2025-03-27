@@ -1,0 +1,19 @@
+#navbar {
+    padding: 16px 0px 16px 0px;
+}
+#site-logo {
+    aspect-ratio: 1/1;
+    background-color: rgb(1, 4, 9);
+    width: 14px;
+}
+#site-home {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(1, 4, 9);
+    padding: 4px;
+    border-radius: 4px;
+    line-height: 20px;
+}
+#site-home:hover {
+    background-color: #d1d1d1;
+}

@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>ListMC - Minecraft Server List</title>
+        
+<meta property="og:site_name" content="Minecraft Server List">
+<meta property="og:title" content="listmc.org">
+<meta name="description" content="">
+<meta name="keywords" content="bwillows bwillowsx brooke willows">
+        
+<link rel="stylesheet" type="text/css" href="/styles/reset.css">
+<link rel="stylesheet" type="text/css" href="/styles/globals.css">
+<link rel="stylesheet" type="text/css" href="/styles/root.css">
+
+<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+<link rel="stylesheet" type="text/css" href="/styles/components/navbar.css">
+<link rel="stylesheet" type="text/css" href="/styles/components/footer.css">
+
+<link rel="stylesheet" type="text/css" href="/styles/components/server.css">
+
+
+<!-- TODO : Replace with local SVGs -->
+<script src="https://kit.fontawesome.com/a1eea36c11.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+        
+<script src="./scripts/functions.js"></script>
+<script src="./scripts/sha256.js"></script>
+<script src="./scripts/login.js"></script>

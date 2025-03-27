@@ -1,0 +1,7 @@
+<div id="footer">
+    <div class="clearfix inner">
+        <div id="contact" class="float-right">
+            <a href="https://github.com/bwillows/listmc"><span id="source">View source on GitHub.</span></a>
+        </div>
+    </div>
+</div>

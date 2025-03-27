@@ -1,0 +1,10 @@
+<div id="navbar">
+    <div id="nav" class="clearfix inner">
+        <div class="float-left">
+            <a class="inline" href="/"><span id="site-home">LISTMC.org</span></a>
+        </div>
+        <div class="float-right">
+            <button id="profile"><i class="fa-sharp fa-solid fa-user"></i></button>
+        </div>
+    </div>
+</div>

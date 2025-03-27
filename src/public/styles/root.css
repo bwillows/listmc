@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+    color: unset;
+}
+html {
+    font-family: 'Segoe UI', 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
+}
+.inner {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
